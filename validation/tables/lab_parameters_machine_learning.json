@@ -1,0 +1,19 @@
+{
+  "input": {
+    "task": "classification",
+    "outcome_column": "mtb_culture",
+    "positive_class": "Positive",
+    "negative_class": "Negative",
+    "max_features_loaded": 20000
+  },
+  "training": {
+    "models": ["logistic_regression", "lasso", "elastic_net", "random_forest", "extra_trees", "svm", "knn", "gradient_boosting", "hist_gradient_boosting", "naive_bayes", "mlp"],
+    "n_features": 200,
+    "test_fraction": 0.25,
+    "cv_folds": 5,
+    "cv_repeats": 2,
+    "tune": true,
+    "n_permutations": 100
+  },
+  "explanation": {"n_top_features": 20, "n_repeats": 20}
+}

@@ -1,0 +1,145 @@
+sample_id	title	source	tissue	distinct_stages_of_tb	age_in_years	gender	chest_x_ray	mtb_culture	tst_in_mm	qft_result
+GSM5820828	Active TB_baseline_ATBX_1380100_SV0	Whole blood	Whole Blood	Active TB_baseline	35	Male	Abnormal TB	Positive	22	Negative
+GSM5820829	Active TB_baseline_ATBX_20400_SV0	Whole blood	Whole Blood	Active TB_baseline	54	Male	Abnormal TB	Positive	9	Negative
+GSM5820830	Active TB_baseline_ATBX_2240100_SV0	Whole blood	Whole Blood	Active TB_baseline	32	Male	Abnormal TB	Positive	18	Positive
+GSM5820831	Active TB_baseline_ATBX_3310100_SV0	Whole blood	Whole Blood	Active TB_baseline	35	Male	Abnormal TB	Positive	8	Positive
+GSM5820832	Active TB_baseline_ATBX_3700200_SV0	Whole blood	Whole Blood	Active TB_baseline	40	Male	Abnormal TB	Positive	15	Positive
+GSM5820833	Active TB_baseline_ATBX_3720100_SV0	Whole blood	Whole Blood	Active TB_baseline	68	Male	Abnormal TB	Positive	2	
+GSM5820834	Active TB_baseline_ATBX_4070100_SV0	Whole blood	Whole Blood	Active TB_baseline	45	Male	Abnormal TB	Positive	13	Positive
+GSM5820835	Active TB_baseline_ATBX_4710100_SV0	Whole blood	Whole Blood	Active TB_baseline	40	Male	Abnormal TB	Positive	15	Positive
+GSM5820836	Active TB_baseline_ATBX_5580100_SV0	Whole blood	Whole Blood	Active TB_baseline	27	Female	Abnormal TB	Positive	4	Negative
+GSM5820837	Active TB_baseline_ATBX_5580200_SV0	Whole blood	Whole Blood	Active TB_baseline	47	Female	Abnormal TB	Positive	12	Positive
+GSM5820838	Active TB_baseline_ATBX_6540100_SV0	Whole blood	Whole Blood	Active TB_baseline	42	Male	Abnormal TB	Positive	15	Negative
+GSM5820839	Subclinical TB_baseline_PRSB_20404_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	13.5	Male	Abnormal TB	Negative	16	Positive
+GSM5820840	Subclinical TB_followup_PRSF_20404_SV2	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	13.7					
+GSM5820841	Subclinical TB_baseline_PRSB_2240102_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	10	Female	Abnormal not TB	Negative	18	Positive
+GSM5820842	Subclinical TB_followup_PRSF_2240102_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	11		Normal	Positive	3	Positive
+GSM5820843	Subclinical TB_baseline_PRSB_4440201_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	55	Male	Normal	Negative	8	Positive
+GSM5820844	Subclinical TB_followup_PRSF_4440201_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	56		Normal	Positive	6	Positive
+GSM5820845	Subclinical TB_baseline_PRSB_7150101_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	42	Male	Abnormal TB	Negative	8	Positive
+GSM5820846	Subclinical TB_followup_PRSF_7150101_SV2	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	42.2		Abnormal possible TB			Positive
+GSM5820847	Subclinical TB_baseline_PRSB_20301_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	51	Female	Abnormal not TB	Negative	6	Negative
+GSM5820848	Subclinical TB_followup_PRSF_20301_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	52		Normal	Positive	3	Positive
+GSM5820849	Subclinical TB_baseline_PRSB_3550102_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	40	Female	Normal	Negative	12	Positive
+GSM5820850	Subclinical TB_followup_PRSF_3550102_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	41		Normal	Positive	15	Positive
+GSM5820851	Subclinical TB_baseline_PRSB_4460107_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	5.6	Female	Normal	Negative	12	Positive
+GSM5820852	Subclinical TB_followup_PRSF_4460107_SV6	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	6			Positive		Negative
+GSM5820853	Subclinical TB_baseline_PRSB_3550104_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	19	Female	Normal	Negative	20	Positive
+GSM5820854	Subclinical TB_followup_PRSF_3550104_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	20		Normal	Positive	15	Positive
+GSM5820855	Subclinical TB_baseline_PRSB_4070101_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	37	Female	Normal	Negative	10	Indeterminate
+GSM5820856	Subclinical TB_followup_PRSF_4070101_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	38		Normal	Positive	14	Positive
+GSM5820857	Subclinical TB_baseline_PRSB_5090202_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	6	Male	Normal	Negative	6	Positive
+GSM5820858	Subclinical TB_followup_PRSF_5090202_SV6	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	6.6			Positive		Positive
+GSM5820859	Subclinical TB_baseline_PRSB_5480202_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	12	Female	Normal	Negative	7	Positive
+GSM5820860	Subclinical TB_followup_PRSF_5480202_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	13		Abnormal possible TB	Positive	12	Positive
+GSM5820861	Subclinical TB_baseline_PRSB_5580201_SV0	Whole blood	Whole Blood	Sub-clinical TB/Progressor_baseline	12.5	Female	Abnormal not TB	Negative	15	Positive
+GSM5820862	Subclinical TB_followup_PRSF_5580201_SV12	Whole blood	Whole Blood	Sub-clinical TB/Progressor_followup	13.5		Normal	Positive	7	Positive
+GSM5820863	Incipient TB_baseline_NPRIB_3510302_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	21	Female	Normal	Positive	7	Positive
+GSM5820864	Incipient TB_followup_NPRIF_3510302_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	22		Normal	Negative	12	Positive
+GSM5820865	Incipient TB_baseline_NPRIB_7600202_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	14	Male	Abnormal TB	Negative	6	Positive
+GSM5820866	Incipient TB_followup_NPRIF_7600202_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	15		Normal	Negative	5	Positive
+GSM5820867	Incipient TB_baseline_NPRIB_6770102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	2	Female	Normal	Positive	5	Positive
+GSM5820868	Incipient TB_followup_NPRIF_6770102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	3		Normal	Negative	12	Positive
+GSM5820869	Incipient TB_baseline_NPRIB_7600203_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	6	Male	Normal	Positive	6	Positive
+GSM5820870	Incipient TB_followup_NPRIF_7600203_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	7		Normal	Negative	6	Positive
+GSM5820871	Incipient TB_baseline_NPRIB_1540101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	50	Male	Normal	Positive	10	Positive
+GSM5820872	Incipient TB_followup_NPRIF_1540101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	51		Normal	Negative	6	Positive
+GSM5820873	Incipient TB_baseline_NPRIB_1790101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	60	Male	Normal	Poistive	10	Positive
+GSM5820874	Incipient TB_followup_NPRIF_1790101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	61		Normal	Negative	5	Negative
+GSM5820875	Incipient TB_baseline_NPRIB_2240101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	27	Female	Abnormal not TB	Positive	15	Positive
+GSM5820876	Incipient TB_followup_NPRIF_2240101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	28		Abnormal not TB	Negative	7	Negative
+GSM5820877	Incipient TB_baseline_NPRIB_2990101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	20	Male	Normal	Positive	15	Positive
+GSM5820878	Incipient TB_followup_NPRIF_2990101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	21		Normal	Negative	6	Positive
+GSM5820879	Incipient TB_baseline_NPRIB_3510201_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	50	Female	Abnormal not TB	Positive	8	Positive
+GSM5820880	Incipient TB_followup_NPRIF_3510201_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	51		Normal	Negative	6	Negative
+GSM5820881	Incipient TB_baseline_NPRIB_3550103_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	19	Male	Normal	Positive	17	Positive
+GSM5820882	Incipient TB_followup_NPRIF_3550103_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	20		Normal	Negative	12	Positive
+GSM5820883	Incipient TB_baseline_NPRIB_3720101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	55	Female	Normal	Positive	7	Positive
+GSM5820884	Incipient TB_followup_NPRIF_3720101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	56		Normal		10	Positive
+GSM5820885	Incipient TB_baseline_NPRIB_4710102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	60	Female	Normal	Positive	10	Positive
+GSM5820886	Incipient TB_followup_NPRIF_4710102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	61		Normal	Negative	12	Positive
+GSM5820887	Incipient TB_baseline_NPRIB_5490101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	63	Male	Abnormal not TB	Positive	7	Positive
+GSM5820888	Incipient TB_followup_NPRIF_5490101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	64		Normal	Negative	5	Positive
+GSM5820889	Incipient TB_baseline_NPRIB_5490104_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	12	Female	Normal	Positive	5	Positive
+GSM5820890	Incipient TB_followup_NPRIF_5490104_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	13		Normal	Negative	6	Positive
+GSM5820891	Incipient TB_baseline_NPRIB_8060102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	10	Male	Normal	Positive	7	Positive
+GSM5820892	Incipient TB_followup_NPRIF_8060102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	11		Normal	Negative	11	Positive
+GSM5820893	Incipient TB_baseline_NPRIB_2330101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	28	Male	Abnormal TB	Negative	9	Positive
+GSM5820894	Incipient TB_followup_NPRIF_2330101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	29		Normal	Negative	7	Positive
+GSM5820895	Incipient TB_baseline_NPRIB_3310101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	29	Female	Abnormal TB	Negative	8	Positive
+GSM5820896	Incipient TB_followup_NPRIF_3310101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	30		Normal	Negative	10	Positive
+GSM5820897	Incipient TB_baseline_NPRIB_3550106_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	13	Male	Abnormal TB	Negative	18	Positive
+GSM5820898	Incipient TB_followup_NPRIF_3550106_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	14		Normal	Negative	12	Positive
+GSM5820899	Incipient TB_baseline_NPRIB_4020104_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	14	Male	Abnormal TB	Negative	0	Positive
+GSM5820900	Incipient TB_followup_NPRIF_4020104_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	15		Normal	Negative	10	Positive
+GSM5820901	Incipient TB_baseline_NPRIB_5580101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	50	Female	Abnormal TB	Negative	22	Positive
+GSM5820902	Incipient TB_followup_NPRIF_5580101_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	51		Abnormal, not TB	Negative	8	Positive
+GSM5820903	Incipient TB_baseline_NPRIB_1380102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	8	Male	Normal	Positive	12	Negative
+GSM5820904	Incipient TB_followup_NPRIF_1380102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	9		Normal	Negative	10	Negative
+GSM5820905	Incipient TB_baseline_NPRIB_2040105_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	12	Female	Normal	Positive	8	Negative
+GSM5820906	Incipient TB_followup_NPRIF_2040105_S12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	13		Normal	Negative	10	Negative
+GSM5820907	Incipient TB_baseline_NPRIB_2360105_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	2.8	Male	Normal	Positive	7	Negative
+GSM5820908	Incipient TB_followup_NPRIF_2360105_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	3.8		Normal	Negative	10	Negative
+GSM5820909	Incipient TB_baseline_NPRIB_2740105_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	10	Male	Abnormal, not TB	Positive	6	Negative
+GSM5820910	Incipient TB_followup_NPRIF_2740105_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	11		Abnormal, not TB	Negative	10	Negative
+GSM5820911	Incipient TB_baseline_NPRIB_3690101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	45	Female	Normal	Positive	5	Negative
+GSM5820912	Incipient TB_followup_NPRIF_3690101_SV6	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	45.6		Normal	Negative	6	Negative
+GSM5820913	Incipient TB_baseline_NPRIB_5290102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	14	Male	Normal	Positive	7	Negative
+GSM5820914	Incipient TB_followup_NPRIF_5290102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	15		Normal	Negative	7	Negative
+GSM5820915	Incipient TB_baseline_NPRIB_5340201_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	27	Female	Normal	Positive	5	
+GSM5820916	Incipient TB_followup_NPRIF_5340201_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	28		Normal	Negative	3	Negative
+GSM5820917	Incipient TB_baseline_NPRIB_5340204_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	6	Male	Normal	Positive	7	
+GSM5820918	Incipient TB_followup_NPRIF_5340204_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	7		Abnormal, not TB		4	Negative
+GSM5820919	Incipient TB_baseline_NPRIB_5490103_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	20	Female	Normal	Positive	6	Negative
+GSM5820920	Incipient TB_followup_NPRIF_5490103_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	21		Normal	Negative	5	Positive
+GSM5820921	Incipient TB_baseline_NPRIB_5580103_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	10	Female	Abnormal, not TB	Positive	13	Positive
+GSM5820922	Incipient TB_followup_NPRIF_5580103_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	11		Normal	Negative	10	Positive
+GSM5820923	Incipient TB_baseline_NPRIB_6010107_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	9	Male	Normal	Positive	5	Negative
+GSM5820924	Incipient TB_followup_NPRIF_6010107_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	10		Normal		4	Negative
+GSM5820925	Incipient TB_baseline_NPRIB_6540102_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	32	Female	Normal	Positive	6	Negative
+GSM5820926	Incipient TB_followup_NPRIF_6540102_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	33		Normal	Negative	5	Negative
+GSM5820927	Incipient TB_baseline_NPRIB_6690101_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	45	Female	Normal	Positive	5	Negative
+GSM5820928	Incipient TB_followup_NPRIF_6690101_SV6	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	45.6		Normal			
+GSM5820929	Incipient TB_baseline_NPRIB_1800203_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	8	Male	Abnormal TB	Negative	5	Negative
+GSM5820930	Incipient TB_followup_NPRIF_1800203_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	9		Normal	Negative	10	Positive
+GSM5820931	Incipient TB_baseline_NPRIB_3700205_SV0	Whole blood	Whole Blood	Incipient TB/Non-Progressor_baseline	13	Male	Normal	Positive	10	Negative
+GSM5820932	Incipient TB_followup_NPRIF_5480401_SV12	Whole blood	Whole Blood	Incipient TB/Non-Progressor_followup	45	Female	Normal	Negative		Negative
+GSM5820933	HH controls_baseline_HC_1380101_SV0	Whole blood	Whole Blood	HH controls_baseline	28	Female	Normal	Negative	12	Positive
+GSM5820934	HH controls_baseline_HC_2040106_SV0	Whole blood	Whole Blood	HH controls_baseline	6	Female	Normal	Negative	13	Positive
+GSM5820935	HH controls_baseline_HC_20403_SV0	Whole blood	Whole Blood	HH controls_baseline	15.7	Male	Normal	Negative	8	Positive
+GSM5820936	HH controls_baseline_HC_2240103_SV0	Whole blood	Whole Blood	HH controls_baseline	7	Male	Normal	Negative	15	Positive
+GSM5820937	HH controls_baseline_HC_2360102_SV0	Whole blood	Whole Blood	HH controls_baseline	25	Female	Abnormal, not TB	Negative	12	Negative
+GSM5820938	HH controls_baseline_HC_3550101_SV0	Whole blood	Whole Blood	HH controls_baseline	50	Male	Normal	Negative	15	Positive
+GSM5820939	HH controls_baseline_HC_4070102_SV0	Whole blood	Whole Blood	HH controls_baseline	12	Female	Normal	Negative	16	Positive
+GSM5820940	HH controls_baseline_HC_4460104_SV0	Whole blood	Whole Blood	HH controls_baseline	16	Female	Normal	Negative	15	Positive
+GSM5820941	HH controls_baseline_HC_4460105_SV0	Whole blood	Whole Blood	HH controls_baseline	25	Female	Normal	Negative	15	Positive
+GSM5820942	HH controls_baseline_HC_4710106_SV0	Whole blood	Whole Blood	HH controls_baseline	33	Female	Normal	Negative	12	Positive
+GSM5820943	HH controls_baseline_HC_5090201_SV0	Whole blood	Whole Blood	HH controls_baseline	8	Male	Normal	Negative	8	Positive
+GSM5820944	HH controls_baseline_HC_5290103_SV0	Whole blood	Whole Blood	HH controls_baseline	15	Female	Normal	Negative	6	Negative
+GSM5820945	HH controls_baseline_HC_5480201_SV0	Whole blood	Whole Blood	HH controls_baseline	32	Female	Normal	Negative	12	Positive
+GSM5820946	HH controls_baseline_HC_6770101_SV0	Whole blood	Whole Blood	HH controls_baseline	21	Female	Normal	Negative	10	Positive
+GSM5820947	HH controls_baseline_HC_7150102_SV0	Whole blood	Whole Blood	HH controls_baseline	40	Female	Normal	Negative	9	Positive
+GSM5820948	HH controls_baseline_HC_3510202_SV0	Whole blood	Whole Blood	HH controls_baseline	20	Female	Normal	Negative	13	Positive
+GSM5820949	HH controls_baseline_HC_3700201_SV0	Whole blood	Whole Blood	HH controls_baseline	35	Female	Normal	Negative	18	Positive
+GSM5820950	HH controls_baseline_HC_4020108_SV0	Whole blood	Whole Blood	HH controls_baseline	27	Female	Normal	Negative	0	Positive
+GSM5820951	HH controls_baseline_HC_7600201_SV0	Whole blood	Whole Blood	HH controls_baseline	32	Female	Normal	Negative	7	Positive
+GSM5820952	HH controls_baseline_HC_5480402_SV0	Whole blood	Whole Blood	HH controls_baseline	16	Male	Normal	Negative	8	Positive
+GSM5820953	HH controls_baseline_HC_5480403_SV0	Whole blood	Whole Blood	HH controls_baseline	10	Female	Normal	Negative	5	Positive
+GSM5820954	HH controls_baseline_HC_5490102_SV0	Whole blood	Whole Blood	HH controls_baseline	45	Female	Normal	Negative	7	Positive
+GSM5820955	HH controls_baseline_HC_1790102_SV0	Whole blood	Whole Blood	HH controls_baseline	50	Female	Normal	Negative	11	Negative
+GSM5820956	HH controls_baseline_HC_2040104_SV0	Whole blood	Whole Blood	HH controls_baseline	32	Female	Normal	Negative	18	Negative
+GSM5820957	HH controls_baseline_HC_20402_SV0	Whole blood	Whole Blood	HH controls_baseline	18	Female	Normal	Negative	0	Negative
+GSM5820958	HH controls_baseline_HC_2360104_SV0	Whole blood	Whole Blood	HH controls_baseline	4.9	Male	Abnormal, not TB	Negative	8	Negative
+GSM5820959	HH controls_baseline_HC_3510301_SV0	Whole blood	Whole Blood	HH controls_baseline	45	Female	Normal	Negative	10	Negative
+GSM5820960	HH controls_baseline_HC_3690102_SV0	Whole blood	Whole Blood	HH controls_baseline	22	Male	Normal	Negative	7	Negative
+GSM5820961	HH controls_baseline_HC_4440202_SV0	Whole blood	Whole Blood	HH controls_baseline	50	Female	Normal	Negative	7	Negative
+GSM5820962	HH controls_baseline_HC_4440204_SV0	Whole blood	Whole Blood	HH controls_baseline	21	Female	Normal	Negative	6	Negative
+GSM5820963	HH controls_baseline_HC_5290101_SV0	Whole blood	Whole Blood	HH controls_baseline	38	Female	Normal	Negative	8	Negative
+GSM5820964	HH controls_baseline_HC_6010102_SV0	Whole blood	Whole Blood	HH controls_baseline	23	Male	Normal	Negative	2	Negative
+GSM5820965	HH controls_baseline_HC_6010110_SV0	Whole blood	Whole Blood	HH controls_baseline	6	Female	Normal	Negative	6	Negative
+GSM5820966	HH controls_baseline_HC_6540101_SV0	Whole blood	Whole Blood	HH controls_baseline	57	Female	Normal	Negative	9	Negative
+GSM5820967	HH controls_baseline_HC_6540103_SV0	Whole blood	Whole Blood	HH controls_baseline	8	Male	Normal	Negative	7	Negative
+GSM5820968	HH controls_baseline_HC_7150103_SV0	Whole blood	Whole Blood	HH controls_baseline	48	Female	Normal	Negative	6	Negative
+GSM5820969	HH controls_baseline_HC_4020109_SV0	Whole blood	Whole Blood	HH controls_baseline	11	Male	Abnormal, not TB	Negative	3	Negative
+GSM5820970	HH controls_baseline_HC_4710107_SV0	Whole blood	Whole Blood	HH controls_baseline	16	Female	Normal	Negative	10	Negative
+GSM5820971	HH controls_baseline_HC_8060101_SV0	Whole blood	Whole Blood	HH controls_baseline	34	Male	Normal	Negative	9	Negative

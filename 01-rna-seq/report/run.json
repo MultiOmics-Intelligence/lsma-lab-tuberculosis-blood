@@ -1,0 +1,379 @@
+{
+ "workflow": "bulk-rnaseq",
+ "workflow_version": "1.2.0",
+ "seed": 42,
+ "dataset": {
+  "kind": "bulk_counts",
+  "organism": "human",
+  "name": "GSE193777: Host blood-based biosignatures for subclinical TB: a prospective study of household contacts of adult pulmonary TB index cases in Southern India."
+ },
+ "inputs": [
+  {
+   "role": "counts",
+   "path": "inputs/GSE193777_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+   "filename": "GSE193777_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+   "sample_label": "",
+   "sha256": "fa34c3bdbd0878f0c0624954bfeb9da868c6d4a0e94beb07591e27065250839b"
+  },
+  {
+   "role": "metadata",
+   "path": "inputs/GSE193777_sample_metadata.tsv",
+   "filename": "GSE193777_sample_metadata.tsv",
+   "sample_label": "",
+   "sha256": "11601f4a4a14c72fe2d7ff8043560e55c53a3b2b07c4e73f434db7735d5e0e2b"
+  }
+ ],
+ "parameters": {
+  "input": {
+   "strip_ensembl_version": true,
+   "sample_preparation": null
+  },
+  "count_qc": {
+   "filter_method": "filterByExpr",
+   "group_column": "distinct_stages_of_tb",
+   "min_count": 10,
+   "min_samples": null,
+   "outlier_mad": 3
+  },
+  "normalisation": {
+   "transformation": "vst"
+  },
+  "exploration": {
+   "color_by": "distinct_stages_of_tb",
+   "n_top_genes": 500,
+   "batch_column": null,
+   "distance": "euclidean",
+   "linkage": "complete",
+   "n_heatmap_genes": 50
+  },
+  "differential_expression": {
+   "method": "deseq2",
+   "group_column": "distinct_stages_of_tb",
+   "test_level": "Active TB_baseline",
+   "reference_level": "HH controls_baseline",
+   "covariates": [],
+   "alpha": 0.05,
+   "lfc_threshold": 1,
+   "lfc_shrinkage": "apeglm",
+   "genes_of_interest": [],
+   "p_adjust_method": "BH",
+   "test_lfc_threshold": 0,
+   "independent_filtering": true,
+   "edger_test": "QLF",
+   "voom_quality_weights": false,
+   "subset_to_contrast": true
+  },
+  "enrichment": {
+   "enabled": true,
+   "collections": [
+    "hallmark",
+    "go_bp",
+    "reactome"
+   ],
+   "run_ora": true,
+   "run_gsea": true,
+   "padj_cutoff": null,
+   "lfc_cutoff": null,
+   "ranking_metric": "statistic",
+   "min_set_size": 10,
+   "max_set_size": 500,
+   "p_adjust_method": "BH"
+  },
+  "batch_correction": {
+   "enabled": false,
+   "batch_column": null,
+   "protect_column": null,
+   "method": "combat",
+   "n_top_genes": 500
+  },
+  "sample_clustering": {
+   "enabled": false,
+   "max_k": 6,
+   "k": null,
+   "n_top_genes": 2000,
+   "algorithm": "hc",
+   "resamplings": 200,
+   "use_batch_corrected": true
+  },
+  "deconvolution": {
+   "enabled": false,
+   "tumour_samples": true,
+   "group_column": null
+  }
+ },
+ "software_versions": {
+  "input": {
+   "R": "4.5.2",
+   "jsonlite": "2.0.0",
+   "AnnotationDbi": "1.70.0",
+   "Bioconductor": "3.21"
+  },
+  "count_qc": {
+   "R": "4.5.2",
+   "edgeR": "4.6.3",
+   "limma": "3.64.3",
+   "Bioconductor": "3.21"
+  },
+  "normalisation": {
+   "R": "4.5.2",
+   "DESeq2": "1.48.2",
+   "edgeR": "4.6.3",
+   "limma": "3.64.3",
+   "Bioconductor": "3.21"
+  },
+  "exploration": {
+   "R": "4.5.2",
+   "limma": "3.64.3",
+   "Bioconductor": "3.21"
+  },
+  "differential_expression": {
+   "R": "4.5.2",
+   "DESeq2": "1.48.2",
+   "apeglm": "1.30.0",
+   "limma": "3.64.3",
+   "edgeR": "4.6.3",
+   "Bioconductor": "3.21"
+  },
+  "enrichment": {
+   "R": "4.5.2",
+   "clusterProfiler": "4.16.0",
+   "fgsea": "1.34.2",
+   "msigdbr": "26.1.1",
+   "Bioconductor": "3.21"
+  }
+ },
+ "stages": [
+  {
+   "key": "input",
+   "position": 0,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "source": "GSE193777_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+    "n_genes": 39376,
+    "n_samples": 144,
+    "gene_id_type": "entrez",
+    "organism": "human",
+    "fraction_annotated": 0.957,
+    "median_library_size": 67227800.0,
+    "min_library_size": 30615000.0,
+    "max_library_size": 103922000.0,
+    "metadata_columns": [
+     "title",
+     "source",
+     "tissue",
+     "distinct_stages_of_tb",
+     "age_in_years",
+     "gender",
+     "chest_x_ray",
+     "mtb_culture",
+     "tst_in_mm",
+     "qft_result"
+    ],
+    "n_genes_all_zero": 2729,
+    "sample_preparation": "not prepared (all uploaded samples are used)",
+    "warnings": []
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:05:25.399173Z",
+   "finished_at": "2026-11-27T19:05:57.963482Z"
+  },
+  {
+   "key": "count_qc",
+   "position": 1,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "filter_rule": "edgeR::filterByExpr (min.count = 10, grouped by 'distinct_stages_of_tb')",
+    "genes_before": 39376,
+    "genes_after": 23918,
+    "genes_removed": 15458,
+    "group_column_used": "distinct_stages_of_tb",
+    "median_library_size": 67227800.0,
+    "flagged_samples": [
+     "GSM5820828",
+     "GSM5820829",
+     "GSM5820831",
+     "GSM5820833",
+     "GSM5820834",
+     "GSM5820836",
+     "GSM5820840",
+     "GSM5820894",
+     "GSM5820902",
+     "GSM5820903",
+     "GSM5820929",
+     "GSM5820933",
+     "GSM5820939",
+     "GSM5820942",
+     "GSM5820952",
+     "GSM5820953",
+     "GSM5820958",
+     "GSM5820964"
+    ],
+    "min_pairwise_correlation": 0.7468,
+    "warnings": [
+     "Flagged sample(s): GSM5820828, GSM5820829, GSM5820831, GSM5820833, GSM5820834, GSM5820836, GSM5820840, GSM5820894, GSM5820902, GSM5820903, GSM5820929, GSM5820933, GSM5820939, GSM5820942, GSM5820952, GSM5820953, GSM5820958, GSM5820964. Inspect them in the correlation heatmap and PCA before deciding what to do."
+    ]
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:05:57.977932Z",
+   "finished_at": "2026-11-27T19:06:25.292746Z"
+  },
+  {
+   "key": "normalisation",
+   "position": 2,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "size_factor_method": "DESeq2 median of ratios (ratio)",
+    "transformation": "VST (DESeq2, blind)",
+    "size_factor_range": [
+     0.329,
+     1.84
+    ],
+    "tmm_factor_range": [
+     0.458,
+     1.23
+    ],
+    "correlation_deseq2_tmm": 0.9906,
+    "n_genes": 23918,
+    "n_samples": 144,
+    "warnings": [
+     "Size factors span a 5.6-fold range. Normalisation corrects depth, but very shallow samples have less power."
+    ]
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:06:25.305025Z",
+   "finished_at": "2026-11-27T19:07:23.023595Z"
+  },
+  {
+   "key": "exploration",
+   "position": 3,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "n_top_genes": 500,
+    "pc1_variance": 17,
+    "pc2_variance": 14.6,
+    "pc1_best_explained_by": {
+     "column": "gender",
+     "r_squared": 0.222
+    },
+    "distance": "euclidean",
+    "linkage": "complete",
+    "batch_view": false,
+    "batch_column": null,
+    "warnings": []
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:07:23.032990Z",
+   "finished_at": "2026-11-27T19:07:31.161041Z"
+  },
+  {
+   "key": "differential_expression",
+   "position": 4,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "method": "DESeq2 (negative binomial GLM, Wald test)",
+    "design": "~ distinct_stages_of_tb",
+    "contrast": "Active TB_baseline vs HH controls_baseline",
+    "group_column": "distinct_stages_of_tb",
+    "test_level": "Active TB_baseline",
+    "reference_level": "HH controls_baseline",
+    "samples_per_group": {
+     "Active TB_baseline": 11,
+     "HH controls_baseline": 39
+    },
+    "covariates": [],
+    "residual_df": 48,
+    "alpha": 0.05,
+    "p_adjust_method": "BH",
+    "lfc_threshold_display": 1,
+    "lfc_threshold_tested": 0,
+    "lfc_shrinkage": "apeglm",
+    "n_tested": 23918,
+    "n_significant": 6248,
+    "n_up": 573,
+    "n_down": 410,
+    "n_padj_na": 464,
+    "statistic": "Wald statistic",
+    "mean_expression": "Mean of normalised counts",
+    "warnings": []
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:07:31.166941Z",
+   "finished_at": "2026-11-27T19:08:25.916007Z"
+  },
+  {
+   "key": "enrichment",
+   "position": 5,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "gene_set_source": "MSigDB 2026.1.Hs via msigdbr",
+    "collections": [
+     "hallmark",
+     "go_bp",
+     "reactome"
+    ],
+    "identifier_type": "entrez",
+    "background_genes": 23918,
+    "background_definition": "All genes tested for differential expression (i.e. passing the expression filter)",
+    "ora_run": true,
+    "ora_genes_up": 573,
+    "ora_genes_down": 410,
+    "ora_significant_sets": 389,
+    "gsea_run": true,
+    "gsea_ranking_metric": "statistic",
+    "gsea_ranked_genes": 23918,
+    "gsea_significant_sets": 2085,
+    "padj_cutoff": 0.05,
+    "lfc_cutoff": 1,
+    "warnings": []
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:08:25.924577Z",
+   "finished_at": "2026-11-27T19:11:04.421615Z"
+  },
+  {
+   "key": "batch_correction",
+   "position": 6,
+   "status": "pending",
+   "progress": 0.0,
+   "message": "",
+   "summary": {},
+   "error": null,
+   "started_at": null,
+   "finished_at": null
+  },
+  {
+   "key": "sample_clustering",
+   "position": 7,
+   "status": "pending",
+   "progress": 0.0,
+   "message": "",
+   "summary": {},
+   "error": null,
+   "started_at": null,
+   "finished_at": null
+  },
+  {
+   "key": "deconvolution",
+   "position": 8,
+   "status": "pending",
+   "progress": 0.0,
+   "message": "",
+   "summary": {},
+   "error": null,
+   "started_at": null,
+   "finished_at": null
+  }
+ ]
+}

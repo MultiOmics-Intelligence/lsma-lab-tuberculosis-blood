@@ -1,0 +1,240 @@
+{
+ "workflow": "machine-learning",
+ "workflow_version": "1.0.0",
+ "seed": 42,
+ "dataset": {
+  "kind": "bulk_counts",
+  "organism": "human",
+  "name": "GSE193777: Host blood-based biosignatures for subclinical TB: a prospective study of household contacts of adult pulmonary TB index cases in Southern India."
+ },
+ "inputs": [
+  {
+   "role": "counts",
+   "path": "inputs/GSE193777_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+   "filename": "GSE193777_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+   "sample_label": "",
+   "sha256": "fa34c3bdbd0878f0c0624954bfeb9da868c6d4a0e94beb07591e27065250839b"
+  },
+  {
+   "role": "metadata",
+   "path": "inputs/GSE193777_sample_metadata.tsv",
+   "filename": "GSE193777_sample_metadata.tsv",
+   "sample_label": "",
+   "sha256": "11601f4a4a14c72fe2d7ff8043560e55c53a3b2b07c4e73f434db7735d5e0e2b"
+  }
+ ],
+ "parameters": {
+  "input": {
+   "task": "classification",
+   "model_run": null,
+   "positive_class": "Positive",
+   "negative_class": "Negative",
+   "time_column": null,
+   "event_column": null,
+   "event_value": null,
+   "group_column": null,
+   "subset_column": null,
+   "subset_value": null,
+   "max_features_loaded": 20000,
+   "outcome_column": "mtb_culture"
+  },
+  "training": {
+   "survival_feature_choice": "association",
+   "n_features": 200,
+   "test_fraction": 0.25,
+   "cv_folds": 5,
+   "tune": true,
+   "cv_repeats": 2,
+   "n_permutations": 100,
+   "models": [
+    "logistic_regression",
+    "lasso",
+    "elastic_net",
+    "random_forest",
+    "extra_trees",
+    "svm",
+    "knn",
+    "gradient_boosting",
+    "hist_gradient_boosting",
+    "naive_bayes",
+    "mlp"
+   ]
+  },
+  "evaluation": {},
+  "explanation": {
+   "n_top_features": 20,
+   "n_repeats": 20
+  }
+ },
+ "software_versions": {
+  "input": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  },
+  "training": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  },
+  "evaluation": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  },
+  "explanation": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  }
+ },
+ "stages": [
+  {
+   "key": "input",
+   "position": 0,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "task": "classification",
+    "features": "gene expression, log2(counts per million + 1)",
+    "features_in_file": 39376,
+    "features_expressed": 16404,
+    "expression_filter": "more than 1 count per million in at least 20% of samples",
+    "restricted_to": "none",
+    "outcome_column": "mtb_culture",
+    "positive_class": "Positive",
+    "negative_class": "Negative",
+    "n_samples": 137,
+    "n_positive": 48,
+    "n_negative": 89,
+    "n_features": 16404,
+    "warnings": [
+     "7 sample(s) with another value of 'mtb_culture' were left out.",
+     "There are 16,404 features for 137 samples. With far more features than samples a model can always find a pattern that fits the training data by chance; only the held-out test set shows whether it is real."
+    ]
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:20:12.011849Z",
+   "finished_at": "2026-11-27T19:20:18.006511Z"
+  },
+  {
+   "key": "training",
+   "position": 1,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "task": "classification",
+    "n_training": 102,
+    "n_test": 35,
+    "test_fraction": 0.25,
+    "split": "stratified by class",
+    "cross_validation": "5-fold, repeated 2 times, on the training samples",
+    "features_selected_per_fold": "the 200 features with the largest F statistic, chosen inside every fold",
+    "tuning": "settings tuned by an inner 3-fold cross-validation (nested)",
+    "models_compared": [
+     "Logistic regression (L2)",
+     "Logistic regression (lasso)",
+     "Logistic regression (elastic net)",
+     "Random forest",
+     "Extremely randomised trees",
+     "Support vector machine (linear)",
+     "k-nearest neighbours",
+     "Gradient boosting",
+     "Histogram gradient boosting",
+     "Naive Bayes",
+     "Neural network (one hidden layer)"
+    ],
+    "chosen_model": "Logistic regression (L2)",
+    "chosen_settings": {
+     "C": 0.01
+    },
+    "cv_auc_mean": 0.6914,
+    "cv_auc_sd": 0.0697,
+    "permutation_p_value": 0.0099,
+    "permutations": 100,
+    "auc_with_shuffled_labels_mean": 0.495,
+    "features_in_final_model": 200,
+    "features_chosen_in_every_fold": 42,
+    "warnings": [
+     "Logistic regression (L2) scored highest, but 9 other model(s) cannot be told apart from it on these folds (Logistic regression (lasso), Logistic regression (elastic net), Random forest). Picking the top of a table like this is usually picking noise; prefer the simplest model among those that cannot be separated.",
+     "The best two models differ by less than the spread between folds. The choice between them is not meaningful."
+    ]
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:20:18.033871Z",
+   "finished_at": "2026-11-27T19:23:13.570129Z"
+  },
+  {
+   "key": "evaluation",
+   "position": 2,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "n_test": 35,
+    "test_auc": 0.8152,
+    "test_auc_interval": "0.64 to 0.96 (95%, bootstrap)",
+    "cv_auc": 0.6914,
+    "accuracy": 0.6571,
+    "balanced_accuracy": 0.6993,
+    "sensitivity": 0.8333,
+    "specificity": 0.5652,
+    "positive_class": "Positive",
+    "threshold": 0.5,
+    "validated_on": "a held-out part of the same dataset; a second, independent dataset is the stronger test and is not available here",
+    "warnings": []
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:23:13.577432Z",
+   "finished_at": "2026-11-27T19:23:17.903144Z"
+  },
+  {
+   "key": "explanation",
+   "position": 3,
+   "status": "completed",
+   "progress": 1.0,
+   "message": "Completed",
+   "summary": {
+    "method": "permutation importance on the test samples (20 shuffles per feature), for the 200 features of the Logistic regression (L2) model",
+    "test_auc": 0.8152,
+    "features_in_model": 200,
+    "features_that_matter": 0,
+    "top_features": [
+     "RPS4X",
+     "TRMT112",
+     "729234",
+     "RPS25",
+     "B4GALT7",
+     "FOXH1",
+     "RPL13AP20",
+     "NCR3"
+    ],
+    "shap_values": "not computed (permutation importance is used instead)",
+    "warnings": [
+     "Shuffling any single feature barely changes the score. Either many features carry the same information, or the model predicts little to begin with."
+    ]
+   },
+   "error": null,
+   "started_at": "2026-11-27T19:23:17.910893Z",
+   "finished_at": "2026-11-27T19:23:48.481860Z"
+  }
+ ]
+}

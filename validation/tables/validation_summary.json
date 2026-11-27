@@ -1,0 +1,85 @@
+{
+ "genes_in_common": 39376,
+ "discovery_samples": 144,
+ "validation_samples": 273,
+ "timepoint_values_raw": {
+  "Diagnosis": 73,
+  "Month_2": 65,
+  "Month_6": 60,
+  "Week_2": 60,
+  "Month 2": 6,
+  "Week 2": 5,
+  "Month 6": 4
+ },
+ "timepoint_values_tidied": {
+  "Diagnosis": 73,
+  "Month_2": 71,
+  "Week_2": 65,
+  "Month_6": 64
+ },
+ "signature": {
+  "up_genes": 573,
+  "down_genes": 409,
+  "from": "Active TB vs household contacts, discovery cohort"
+ },
+ "external_signature": {
+  "n_diagnosis": 73,
+  "n_month6": 64,
+  "median_score_diagnosis": 0.764,
+  "median_score_month6": -0.6344,
+  "mann_whitney_p": 7.099434394453086e-18,
+  "auc_diagnosis_vs_month6": 0.9274,
+  "cliffs_delta": 0.8549
+ },
+ "external_signature_paired": {
+  "n_patients_with_both": 61,
+  "median_fall": 1.4901,
+  "wilcoxon_p": 7.107600913101173e-11,
+  "patients_whose_score_fell": 57
+ },
+ "discovery_model": {
+  "n_train": 137,
+  "n_positive": 48,
+  "cv_auc_mean": 0.7547,
+  "cv_auc_sd": 0.0714
+ },
+ "external_model": {
+  "n_validation": 137,
+  "n_diagnosis": 73,
+  "auc": 0.7138,
+  "what_is_being_predicted": "trained on culture-positive vs culture-negative in the discovery cohort, applied to active disease at diagnosis vs the same patients after six months of treatment in an independent cohort"
+ },
+ "external_model_by_site": [
+  {
+   "field_site": "Indonesia",
+   "n": 58,
+   "auc": 0.7881
+  },
+  {
+   "field_site": "Romania",
+   "n": 29,
+   "auc": 0.7115
+  },
+  {
+   "field_site": "South_Africa",
+   "n": 50,
+   "auc": 0.6586
+  }
+ ],
+ "sex_check": {
+  "sex_linked_genes_detected": 17,
+  "sex_linked_genes_among_the_models_200_features": 0,
+  "their_symbols": [],
+  "predicting_sex_instead": {
+   "n_with_sex_recorded": 98,
+   "n_missing_sex": 46,
+   "cv_auc_mean": 1.0,
+   "cv_auc_sd": 0.0
+  },
+  "tb_model_without_sex_linked_genes": {
+   "cv_auc_mean": 0.7547,
+   "cv_auc_sd": 0.0714,
+   "external_auc": 0.7138
+  }
+ }
+}

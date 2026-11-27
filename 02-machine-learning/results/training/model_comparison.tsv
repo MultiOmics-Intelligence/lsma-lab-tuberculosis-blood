@@ -1,0 +1,12 @@
+model	mean_auc	sd	min	max	folds	behind_the_best_by	told_apart_from_the_best	chosen
+Logistic regression (L2)	0.6914	0.0697	0.5714	0.7857	10	0	False	True
+Extremely randomised trees	0.6704	0.1005	0.467	0.8061	10	0.021	False	False
+Random forest	0.6701	0.1076	0.5165	0.8571	10	0.0213	False	False
+Support vector machine (linear)	0.6645	0.0861	0.5165	0.8367	10	0.0268	False	False
+Histogram gradient boosting	0.6593	0.092	0.5165	0.8242	10	0.0321	False	False
+Logistic regression (lasso)	0.6531	0.0984	0.4725	0.8132	10	0.0382	False	False
+Logistic regression (elastic net)	0.6503	0.0815	0.5204	0.7802	10	0.0411	False	False
+k-nearest neighbours	0.6459	0.0849	0.5275	0.8061	10	0.0455	False	False
+Naive Bayes	0.6246	0.1145	0.456	0.8367	10	0.0668	False	False
+Gradient boosting	0.6186	0.1032	0.4725	0.7857	10	0.0728	False	False
+Neural network (one hidden layer)	0.5647	0.058	0.4725	0.6735	10	0.1267	True	False

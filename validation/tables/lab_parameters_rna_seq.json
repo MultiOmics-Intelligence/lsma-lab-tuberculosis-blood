@@ -1,0 +1,20 @@
+{
+  "input": {"strip_ensembl_version": true},
+  "count_qc": {"filter_method": "filterByExpr", "group_column": "distinct_stages_of_tb", "outlier_mad": 3},
+  "normalisation": {"transformation": "vst"},
+  "exploration": {"color_by": "distinct_stages_of_tb", "n_top_genes": 500, "distance": "euclidean", "linkage": "complete", "n_heatmap_genes": 50},
+  "differential_expression": {
+    "method": "deseq2",
+    "group_column": "distinct_stages_of_tb",
+    "test_level": "Active TB_baseline",
+    "reference_level": "HH controls_baseline",
+    "covariates": [],
+    "alpha": 0.05,
+    "lfc_threshold": 1,
+    "lfc_shrinkage": "apeglm",
+    "p_adjust_method": "BH",
+    "independent_filtering": true,
+    "subset_to_contrast": true
+  },
+  "enrichment": {"enabled": true, "collections": ["hallmark", "go_bp", "reactome"], "run_ora": true, "run_gsea": true, "ranking_metric": "statistic", "min_set_size": 10, "max_set_size": 500}
+}
